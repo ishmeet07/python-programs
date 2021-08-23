@@ -1,4 +1,5 @@
 #this program is made by  ishmeet singh
+#this is a deck war game
 import random
 
 suits = ['spades', 'club', 'hearts', 'diamond']
