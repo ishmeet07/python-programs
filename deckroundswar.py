@@ -67,9 +67,10 @@ class Player:
     def __str__(self):
         return f'Player {self.name} has {len(self.allcards)} cards'
 
-
-player1 = Player("player1")
-player2 = Player("player2")
+n=input("enter name of player1")
+m=input("enter name of player2")
+player1 = Player(n)
+player2 = Player(m)
 newdeck = Deck()
 newdeck.shuffle()
 
@@ -82,11 +83,11 @@ while game:
     round += 1
     print(f"round{round}🎃🤩")
     if len(player1.allcards) == 0:
-        print("player1 out of cards")
+        print( f"{player1.name} of cards")
         game = False
         break
     elif len(player2.allcards) == 0:
-        print("player2 out of cards")
+        print(f"{player2.name }out of cards")
         game = False
         break
     player1cards = []
@@ -107,11 +108,11 @@ while game:
         else:
             print("war")
             if len(player1.allcards) < 5:
-                print(" player 1 out of cards")
+                print(f"{player1.name} out of cards")
                 game = False
                 break
             elif len(player2.allcards) < 5:
-                print(" player 2 out of cards")
+                print(f"{player1.name} out of cards")
                 game = False
                 break
 
@@ -119,8 +120,6 @@ while game:
                 for n in range(5):
                     player1cards.append(player1.remove())
                     player2cards.append(player2.remove())
-
-
 
 
 
