@@ -3,8 +3,7 @@ x=[]
 y=int(input(("enter the no of elements")))
 for i in range(0,y):
     a= int(input(f"enter the element {i}"))
-    x.append(a)
-x.sort()    
+    x.append(a)   
 a=arr.array('i',x)
 for i in range(0,y):
     print(a[i],end=" ")
