@@ -16,7 +16,8 @@ for i in range(0,l-1):
             a[d+1]=a[d]
             a[d]=temp
     for k in range(0,l):        
-        print(a[k],end=" ")        
+        print(a[k],end=" ")  
+print("\n")              
 print("the resultant array is \n")
 for k in range(0,l):        
-        print(a[k],end=" ")        
+        print(a[k],end=" ")       
